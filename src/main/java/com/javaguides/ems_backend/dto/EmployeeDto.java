@@ -1,37 +1,21 @@
 package com.javaguides.ems_backend.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 public class EmployeeDto {
 
     private Long id;
+
+
+
     private String firstName;
     private String lastName;
     private String email;
-
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
 
     public void setId(Long id) {
         this.id = id;
